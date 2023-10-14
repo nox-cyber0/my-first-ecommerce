@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { AuthProvider } from "./Utils/Auth";
 import Login from "./Pages/Login";
 import Home from "./Pages/Home";
 import UndefinedRoute from "./Pages/Undefined";
@@ -10,6 +11,7 @@ import "./App.css";
 
 const App = () => {
   return (
+    <AuthProvider>
       <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route index element={<Home />} /> */}
@@ -18,6 +20,7 @@ const App = () => {
           <Route path="about" element={<About />} />
           <Route path="/*" element={<UndefinedRoute />} />
       </Routes>
+    </AuthProvider>
   );
 };
 
