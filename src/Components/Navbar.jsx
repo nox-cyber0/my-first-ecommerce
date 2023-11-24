@@ -13,8 +13,8 @@ const Navbar = () => {
   }, [displayMenu])
 
   return (
-    <header className='fixed w-full'>
-      <nav className="w-full md:flex md:justify-between md:items-center bg-gray-50 px-8 md:px-20 py-2.5 dark:bg-slate-800">
+    <header className='fixed w-full bg-gray-50 dark:bg-slate-800'>
+      <nav className="w-full md:flex md:justify-between md:items-center px-12 md:px-20 py-3.5 mx-auto">
         <Link className="text-lg font-bold font-mono text-blue-700 uppercase inline dark:text-white" to='/'>Logo</Link>
         <span
           className='md:hidden block float-right font-mono cursor-pointer text-slate-800 dark:text-gray-50'
@@ -22,7 +22,7 @@ const Navbar = () => {
             displayMenu === 'hidden' ? setDisplayMenu('block') : setDisplayMenu('hidden')
           }}
         >{menuIcon}</span>
-        <div className={`${displayMenu} md:flex md:justify-between w-3/4`}>
+        <div className={`${displayMenu} md:flex md:justify-between w-3/4 max-sm:w-full text-right`}>
           <ul className="text-slate-700 dark:text-gray-50 font-medium md:flex">
             <li className="md:mx-6 py-2.5 md:py-0"><NavLink to='/'>Home</NavLink></li>
             <li className="md:mx-6 pb-2.5 md:py-0"><NavLink to='/products'>Products</NavLink></li>
