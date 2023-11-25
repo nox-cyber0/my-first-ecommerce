@@ -22,7 +22,7 @@ const Navbar = () => {
             displayMenu === 'hidden' ? setDisplayMenu('block') : setDisplayMenu('hidden')
           }}
         >{menuIcon}</span>
-        <div className={`${displayMenu} md:flex md:justify-between w-3/4 max-sm:w-full text-right`}>
+        <div className={`${displayMenu} md:flex md:justify-between w-full text-right`}>
           <ul className="text-slate-700 dark:text-gray-50 font-medium md:flex">
             <li className="md:mx-6 py-2.5 md:py-0"><NavLink to='/'>Home</NavLink></li>
             <li className="md:mx-6 pb-2.5 md:py-0"><NavLink to='/products'>Products</NavLink></li>
