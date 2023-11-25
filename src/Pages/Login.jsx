@@ -6,6 +6,13 @@ import { useAuth } from "../Utils/AuthContext";
 const Login = () => {
   const [user, setUser] = useState('');
   const [pwd, setPwd] = useState('');
+  const navigate = useNavigate();
+  const locate = useLocation();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate('/')
+  }
 
   return (
     <>
