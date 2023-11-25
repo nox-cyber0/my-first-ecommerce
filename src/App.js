@@ -11,7 +11,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App dark">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="products" element={<Products />} />
