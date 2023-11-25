@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <header className='fixed w-full bg-gray-50 dark:bg-slate-800'>
-      <nav className="w-full md:flex md:justify-between md:items-center px-12 md:px-20 py-3.5 mx-auto">
+      <nav className="w-full md:flex md:justify-between md:items-center px-8 md:px-20 py-3.5 mx-auto">
         <Link className="text-lg font-bold font-mono text-blue-700 uppercase inline dark:text-white" to='/'>Logo</Link>
         <span
           className='md:hidden block float-right font-mono cursor-pointer text-slate-800 dark:text-gray-50'
