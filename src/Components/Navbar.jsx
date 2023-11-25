@@ -13,7 +13,7 @@ const Navbar = () => {
   }, [displayMenu])
 
   return (
-    <header className='fixed w-full bg-gray-50 dark:bg-slate-800'>
+    <header className='fixed w-full bg-gray-50 dark:bg-slate-800 shadow-sm shadow-slate-300 dark:shadow-slate-900'>
       <nav className="w-full md:flex md:justify-between md:items-center px-8 md:px-20 py-3.5 mx-auto">
         <Link className="text-lg font-bold font-mono text-blue-700 uppercase inline dark:text-white" to='/'>Logo</Link>
         <span
